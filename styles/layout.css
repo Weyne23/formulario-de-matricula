@@ -1,5 +1,4 @@
 #app {
-    display: grid;
     grid-template-columns: 51.25% 48.75%;
 
     height: 100vh;
@@ -48,4 +47,70 @@ aside {
             color: var(--text-hightlight);
         }
     }
+}
+
+@media (width < 50em) {
+    #app {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    aside {
+        display: grid;
+        justify-content: center;
+        padding: 1.5rem;
+        & .aside-container {
+            background-color: var(--surface-secondary);
+            display: grid;
+            justify-content: center;
+
+            & header {
+                display: grid;
+                justify-content: center;
+
+                & img {
+                    min-height: 2rem;
+                }
+            }
+
+            & > img  {
+                margin-top: .75rem;
+            }
+        }
+    }
+
+    .aside-container {
+        display: grid;
+        width: 100%;
+        justify-content: center;
+        padding: 1.5rem;
+        background-color: var(--surface-secondary);
+        justify-content: center;
+
+        & header {
+            display: grid;
+            justify-content: center;
+
+            & img {
+                min-height: 2rem;
+            }
+        }
+
+        & > img  {
+            margin-top: .75rem;
+        }
+    }
+
+    main {
+        justify-items: center;
+        padding: 0rem;
+        
+        & .main-container {
+            margin-left: 0;
+            display: grid;
+            justify-content: center;
+            padding: 1.5rem;
+        }
+    }
+
 }

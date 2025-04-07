@@ -27,3 +27,20 @@ button {
         }
     }
 }
+
+@media (width < 50em) {
+    .actions-wrapper {
+        display: flex;
+        flex-direction: column;
+
+        & button {
+            flex-grow: 1;
+            display: block;
+            text-align: center;
+
+            &.btn-secondary{
+                margin-left: 0;
+            }
+        }
+    }
+}

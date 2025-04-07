@@ -54,3 +54,35 @@ img {
 .flex-2 {
     flex: 2;
 }
+
+.even-columns {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+}
+
+.desktop-only {
+    display: inherit;
+}
+
+.mobile-only {
+    display: none;
+}
+
+@media (width < 50em) {
+    .even-columns {
+        grid-auto-flow: row;
+    }
+
+    .desktop-only {
+        display: none;
+    }
+
+    .mobile-only {
+        display: inherit;
+    }
+
+    body {
+        overflow: auto;
+    }
+}

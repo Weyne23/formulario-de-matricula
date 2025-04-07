@@ -96,3 +96,13 @@ input {
         display: none;
     }
 }
+
+@media (width < 50em) {
+    .mobile-input {
+        display: grid;
+    }
+
+    .address {
+        gap: 1.25rem;
+    }
+}

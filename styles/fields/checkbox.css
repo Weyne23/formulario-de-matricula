@@ -19,7 +19,7 @@
         inset: 0;
     }
 
-    .checkbox-image {
+    & .checkbox-image {
         flex: 0 0 1.5rem;
         height: 1.5rem;
 
@@ -34,5 +34,13 @@
 
     &:has(:checked) .checkbox-image {
         background-image: url("../../assets/icons/checkbox-checked.svg");
+    }
+}
+
+@media (width < 50em) {
+    .terms-wrapper {
+        & label {
+            font: var(--text);
+        }
     }
 }

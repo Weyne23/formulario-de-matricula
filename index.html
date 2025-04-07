@@ -15,8 +15,14 @@
 </head>
 
 <body>
-    <div id="app">
+    <div id="app" class="even-columns">
         <main>
+            <div class="aside-container mobile-only">
+                <header>
+                    <img src="assets/Logo.svg" alt="logo">
+                </header>
+                <img src="assets/Illustration.svg" alt="Ilustração professora">
+            </div>
             <div class="main-container">
                 <div class="back">
                     <img src="assets/icons/arrow-left-02.svg" alt="flecha">
@@ -89,7 +95,7 @@
                             <input type="text" id="cep" name="cep">
                         </div>
 
-                        <div class="flex">
+                        <div class="flex mobile-input">
                             <div class="input-wrapper flex-2">
                                 <label for="street">Rua</label>
                                 <input 
@@ -106,7 +112,7 @@
                             </div>
                         </div>
 
-                        <div class="flex">
+                        <div class="flex mobile-input">
                             <div class="input-wrapper flex-2">
                                 <label for="city">Cidade</label>
                                 <input 
@@ -176,7 +182,7 @@
                                     <div class="radio-image"></div>
                                     <input type="radio" name="study-shift" value="evening" id="evening">
                                     <img src="assets/icons/sun-02.svg" alt="Icone de sol">
-                                    <label for="evening">Trade</label>
+                                    <label for="evening">Tarde</label>
                                 </div>
                             </div>
                         </div>
@@ -240,22 +246,19 @@
                     </div>
 
                     <div class="actions-wrapper">
-                        <button class="btn-secondary" type="button">
-                            Salvar respostas
-                        </button>
-
+                        <button class="btn-secondary" type="button">Salvar respostas</button>
                         <button class="btn-primary" type="submit">Fazer matrícula</button>
                     </div>
                 </form>
             </div>
         </main>
 
-        <aside>
+        <aside class="desktop-only">
             <div class="aside-container">
                 <header>
                     <img src="assets/Logo.svg" alt="logo">
-                    <h2>Porque cada momento de <span>aprendizado</span> conta</h2>
-                    <p>Inscreva seu filho em nossa escola e veja-o florescer em um ambiente acolhedor, seguro e
+                    <h2 class="desktop-only">Porque cada momento de <span>aprendizado</span> conta</h2>
+                    <p class="desktop-only">Inscreva seu filho em nossa escola e veja-o florescer em um ambiente acolhedor, seguro e
                         estimulante.</p>
                 </header>
                 <img src="assets/Illustration.svg" alt="Ilustração professora">

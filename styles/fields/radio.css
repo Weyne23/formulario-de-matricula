@@ -10,7 +10,7 @@ label + .radio-wrapper {
 }
 
 .radio-inner {
-    border: 1px solid var(--stroke-default);
+    border: 2px solid var(--stroke-default);
     border-radius: .5rem;
 
     display: grid;
